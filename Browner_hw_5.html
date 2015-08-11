@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<header>
+	</header>
+
+	<body>
+		<!-- this HTML div has an onclick element. When the text gets clicked it will call the javascript function -->
+		<div onclick="change()" id="planet">Upon Entering</div>
+
+
+
+		<script>
+		//3 ways to see script output
+
+		//display in console
+		console.log("HelloWorld")
+
+		//display in pop up window
+		alert("Hello World")
+
+		//logging to HTML
+		/*this function called change has an empty argument. Looks in the document for an id "planet" where it will change the inner HTML in this case text to "Hello World"*/
+		function change(){
+			document.getElementById("planet").innerHTML = "Hello World";
+		}
+
+		//Data types
+		//String
+		//Number
+		//Boolean
+		//Undefined
+		//arrays
+
+		// variable container for a value
+
+		var name = "Brandy";
+		var number = 10;
+		var boolean = true;
+
+		// Arrays
+		//Strings
+		["Red", "Blue", "Yellow"]
+
+		// Multiple Data types
+		["Candy", "Fruit", 10]
+
+		// Arrays can be stored in variables
+		var color_kinds = ["primary", "secondary", "tertiary"]
+		var color_names = ["yellow", "yellow-orange", "orange"]
+
+		// Multi dimensional arrays stores other arrays
+		// you donot make the array name strings as they are now variables
+		var color = [color_kinds, color_names]
+
+		// access the first item in the array
+		console.log(color_kinds[1])
+
+		console.log(color[0][1] + " " + color[1][2])
+
+		// Objects: stores more specific data
+
+			var fabric = {
+	     		name: 'Laura Berringer',
+	     		width: 45,
+	     		fiber: 'cotton',
+	     		weight: 'garment',
+	     		//designer: alert('Faye Burgos')
+	     
+	     	}
+
+	     	//dot notation to get 
+	     	console.log(fabric.name)
+
+	     	//String concatenation: adding strings together
+	     	var sentence1 = "I need to ";
+	     	var sentence2 = "Remember this.";
+	     	var completeSentence = sentence1 + sentence2;
+
+	     	console.log(completeSentence)
+
+	     	//Logic
+
+	     	// equals
+	     	// ===
+
+	     	// not equal
+	     	// !==
+
+	     	"string one" === "string two"
+	     	//false
+
+	     	5 === 5
+	     	// true
+
+	     	5 === "five"
+	     	// false
+
+	     	/// === checks the object. It goes one step deeper
+
+	     	// else statement
+	     	if(6>7){
+	     		console.log("you will not see this");
+	     	}else{
+	     		console.log("you will see this");
+	     	}
+
+	     	// else if statement
+	     	if(6>7){
+	     		console.log("You will not see this");
+	     	}else if(6===6){
+	     		console.log("6 is equal to 6");
+	     	}else{
+	     		console.log("This will not print either because statement is true")
+	     	}
+
+	     	/* functions allow you to store code for later use*/
+
+	     	function age(Argument){
+	     		return Argument + 10;
+	     	}
+	     	console.log(age(4));
+
+	     	// simple function
+
+	     	function alertName(someName){
+	     		return alert(someName);
+	     	}
+	     	alertName("Brandy");
+
+	     	// For Loop
+	     	// will calc for number of iterations
+
+	     	for(var i = 0; i<10; i++){
+	     		console.log(i)
+	     	}
+
+	     	// lists all colors in array
+
+	     	hues = ["pink", "purple", "gold"]
+
+	     	for(var i = 0; i<hues.length; i++){
+	     		console.log(hues[i])
+	     	}
+
+	     	// While loop
+	     	// as long as the conditions are not met
+	     	// must set iterations
+
+	     	x = 2
+	     	while(x < 10){
+	     		console.log(x)
+	     		x++;
+	     	}
+
+
+		</script>
+
+	</body>
+</html>
